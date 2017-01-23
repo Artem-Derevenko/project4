@@ -1,0 +1,139 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme.carousel-head .owl-controls{
+	position: absolute;
+	width: 100%;
+	top: 450px;
+	left: 0px;
+	text-align: center;
+}
+
+.owl-theme.carousel-reviews .owl-controls{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+.owl-theme.carousel-head .owl-controls .owl-buttons {
+	position: absolute;
+	top: -160px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+} 
+.owl-theme.carousel-reviews .owl-controls .owl-buttons {
+	position: absolute;
+	top: -350px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+} 
+.owl-theme .owl-controls .owl-buttons div.owl-prev {
+	position: relative;
+	float: left;
+	top: 0px;
+	left: -80px;
+	width: 39px;
+	height: 76px;
+	background: url(../img/slider/prev.png); 
+	cursor: pointer;
+	-webkit-transition: all .4s ease-in-out;
+  	-moz-transition: all .4s ease-in-out;
+  	-o-transition: all .4s ease-in-out;
+  	-ms-transition: all .4s ease-in-out;
+  	transition: all .4s ease-in-out;
+} 
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+	position: relative;
+	float: right;
+	top: 0px;
+	right: -80px;
+	width: 39px;
+	height: 76px;
+	background: url(../img/slider/next.png); 
+	cursor: pointer;
+	-webkit-transition: all .4s ease-in-out;
+  	-moz-transition: all .4s ease-in-out;
+  	-o-transition: all .4s ease-in-out;
+  	-ms-transition: all .4s ease-in-out;
+  	transition: all .4s ease-in-out;
+} 
+.owl-theme .owl-controls .owl-buttons div.owl-prev:hover {
+	position: relative;
+	float: left;
+	top: 0px;
+	left: -80px;
+	width: 39px;
+	height: 76px;
+	background: url(../img/slider/prev-hover.png); 
+	cursor: pointer;
+} 
+.owl-theme .owl-controls .owl-buttons div.owl-next:hover {
+	position: relative;
+	float: right;
+	top: 0px;
+	right: -80px;
+	width: 39px;
+	height: 76px;
+	background: url(../img/slider/next-hover.png); 
+	cursor: pointer;
+} 
+
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0px 8px;
+	background: url(../img/slider/owl-page-inactive.png);
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	background: url(../img/slider/owl-page-active.png);
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
